@@ -48,7 +48,7 @@ resource fluxConfig 'Microsoft.KubernetesConfiguration/fluxConfigurations@2022-0
     namespace: 'cluster-config'
     sourceKind: 'GitRepository'
     gitRepository: {
-      url: 'https://github.com/timthedevguy-truesec/gitops-flux2-kustomize-helm-mt'
+      url: 'https://github.com/timthedevguy/tsx-howler-test'
       repositoryRef: {
         branch: 'main'
       }
