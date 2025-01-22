@@ -3,7 +3,7 @@ apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmChart
 metadata:
   name: howler-chart
-  namespace: default
+  namespace: howler
 spec:
   interval: 5m0s
   # 

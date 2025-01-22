@@ -3,7 +3,7 @@ apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
   name: howler-repo
-  namespace: default
+  namespace: howler
 spec:
   interval: 5m0s
   url: https://github.com/CybercentreCanada/howler
