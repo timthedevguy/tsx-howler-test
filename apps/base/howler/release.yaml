@@ -6,9 +6,12 @@ metadata:
 spec:
   targetNamespace: howler
   releaseName: howler
-  chartRef:
-    kind: HelmChart
-    name: howler-chart
+  chart:
+    spec:
+      chart: howler-chart
+      sourceRef:
+        kind: HelmChart
+        name: howler-chart
   interval: 5m
   install:
     remediation:
