@@ -10,8 +10,8 @@ spec:
     spec:
       chart: howler-helm
       sourceRef:
-        kind: HelmChart
-        name: howler-chart
+        kind: GitRepository
+        name: howler-repo
   interval: 5m
   install:
     remediation:
