@@ -1,5 +1,5 @@
 # https://fluxcd.io/flux/components/source/helmcharts/
-apiVersion: source.toolkit.fluxcd.io/v1
+apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmChart
 metadata:
   name: howler-chart

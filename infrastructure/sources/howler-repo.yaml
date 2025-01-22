@@ -1,5 +1,5 @@
 # https://fluxcd.io/flux/components/source/gitrepositories/
-apiVersion: source.toolkit.fluxcd.io/v1
+apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
   name: howler-repo
