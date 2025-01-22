@@ -1,0 +1,16 @@
+# https://fluxcd.io/flux/components/source/helmcharts/
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: HelmChart
+metadata:
+  name: howler-chart
+  namespace: default
+spec:
+  interval: 5m0s
+  # 
+  chart: howler-helm
+  reconcileStrategy: ChartVersion
+  # Reference to the source where the chart is (HelmRepository/GitRepository/Bucket)
+  sourceRef:
+    kind: GitRepository
+    name: howler-repo
+  version: '0.1.40'

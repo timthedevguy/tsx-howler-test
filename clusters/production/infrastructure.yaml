@@ -1,0 +1,14 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: infrastructure
+  namespace: default
+spec:
+  interval: 10m0s
+  sourceRef:
+    kind: GitRepository
+    # Not 100% sure about this line, this references something that is pulled into k8 via the
+    # github actions, but I never ran those
+    name: flux-system
+  path: ./infrastructure
+  prune: true
